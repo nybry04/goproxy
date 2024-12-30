@@ -14,5 +14,8 @@ COPY --from=builder /build/main /build/main
 
 ENV LISTEN="localhost:25565"
 ENV TARGET="remotehost:25565"
+ENV LIMBO="remotehost:30000"
+ENV SUPABASE_URL=""
+ENV SUPABASE_TOKEN=""
 
 CMD ["./main"]
